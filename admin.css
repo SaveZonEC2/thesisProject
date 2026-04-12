@@ -158,3 +158,60 @@
 .search-bar button:hover {
     background-color: #555555;
 }
+/* หัวข้อ section */
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+th {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #666666;
+    border-bottom: 1px solid #eeeeee;
+}
+
+td input[type="number"] {
+    width: 80px;
+    padding: 6px 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+}
+
+td button {
+    padding: 6px 14px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #555555;
+}
