@@ -1,3 +1,18 @@
+<?php
+session_start();
+include 'connect.php';
+
+if(!isset($_SESSION['user_id'])){
+    header("Location: Login_Page.html");
+    exit;
+}
+
+if($_SESSION['role'] != 'admin'){
+    header("Location: Login_Page.html");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="th">
     <head>
@@ -51,9 +66,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
                         <?php
                         include 'connect.php';
+                        
                         $sql = "SELECT * FROM thesis";
                         $result = mysqli_query($conn,$sql);
 

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    width: 420px;
+}
+
+form h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+form p {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+/* input ทุกอัน */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    margin-top: 12px;
+    color: #333333;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #cccccc;
+}
+
+/* First name กับ Last name อยู่แถวเดียวกัน */
+div.name {
+    display: flex;
+    gap: 8px;
+}
+
+div.name input {
+    margin-top: 12px;
+}
+
+/* ปุ่มสมัคร */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555555;
+}
